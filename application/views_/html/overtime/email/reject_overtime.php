@@ -6,7 +6,7 @@
         'p' => ' font-family: sans-serif;',
         'footer' => 'margin-top: 10px;',
         'table' => 'font-family:sans-serif;border-collapse: collapse;width:100%;',
-        'th' => 'border: 1px solid #422800;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #3399cc;color: #422800;',
+        'th' => 'border: 1px solid #422800;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #116171;color: #422800;',
         'td' => 'border: 1px solid #422800;padding: 8px;text-align:left',
         'button_container' => 'padding:10px;text-align:center;margin-top:20px;',
         'button' => 'border: 2px solid #422800;

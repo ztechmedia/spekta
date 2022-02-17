@@ -6,7 +6,7 @@
         'p' => ' font-family: sans-serif;',
         'footer' => 'margin-top: 10px;',
         'table' => 'font-family:sans-serif;border-collapse: collapse;width:100%;',
-        'th' => 'border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #39c;color: white;',
+        'th' => 'border: 1px solid #ddd;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #116171;color: white;',
         'td' => 'border: 1px solid #ddd;padding: 8px;',
     ];
 

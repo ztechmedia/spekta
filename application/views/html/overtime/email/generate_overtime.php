@@ -2,15 +2,14 @@
     $style = [
         'head' => 'padding: 5px 0px 0px 10px;text-align:center;',
         'img' => 'width: 220px;height: auto;',
-        'body' => 'background: white;text-align:center;margin-top: 20px;border-radius: 5px;border: 1px solid #ccc;padding: 10px;box-shadow: 5px 10px #ccc;',
+        'body' => 'background: white;text-align:center;margin-top: 20px;border-radius: 5px;border: 1px solid #422800;padding: 10px;box-shadow: 5px 10px #ccc;',
         'p' => ' font-family: sans-serif;',
         'footer' => 'margin-top: 10px;',
         'table' => 'font-family:sans-serif;border-collapse: collapse;width:100%;',
-        'th' => 'border: 1px solid #422800;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #39c;color: #422800;',
+        'th' => 'border: 1px solid #422800;padding: 8px;padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #116171;color: #422800;',
         'td' => 'border: 1px solid #422800;padding: 8px;text-align:left',
         'button_container' => 'padding:10px;text-align:center;margin-top:20px;',
-        'button' => 'background-color: #39c;
-                    border: 2px solid #422800;
+        'button' => 'border: 2px solid #422800;
                     border-radius: 30px;
                     box-shadow: #422800 4px 4px 0 0;
                     color: #422800;

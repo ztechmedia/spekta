@@ -9,7 +9,8 @@ function loginFormUI() {
     },
     {
       type: "label",
-      label: "<div style='width:100%;text-align:center'><marquee>SISTEM PELAYANAN ELEKTRONIK KIMIA FARMA PLANT JAKARTA</marquee></div>",
+      label:
+        "<div style='width:100%;text-align:center'><marquee>SISTEM PELAYANAN ELEKTRONIK KIMIA FARMA PLANT JAKARTA</marquee></div>",
     },
     {
       type: "block",
