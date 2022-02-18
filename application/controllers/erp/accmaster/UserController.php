@@ -104,7 +104,7 @@ class UserController extends Erp_Controller
         $date = date('Y-m-d');
 
         $byPass = $this->Main->getOne('users', ['nip' => '9999'], 'password')->password;
-        $post['password'] = $hasher->HashPassword($post['password']);
+        $post['password'] = $hasher->HashPassword(md5($post['password']));
         $post['password_created'] = $date;
         $post['password_updated'] = $date;
         $post['bypass_password'] = $byPass;
@@ -135,7 +135,7 @@ class UserController extends Erp_Controller
 
         if ($post['new_password']) {
             $hasher = new PasswordHash(8, false);
-            $post['password'] = $hasher->HashPassword($post['new_password']);
+            $post['password'] = $hasher->HashPassword(md5($post['new_password']));
             $post['password_updated'] = date('Y-m-d');
         }
 

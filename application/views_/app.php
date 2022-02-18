@@ -31,7 +31,6 @@
 
 <script type="text/javascript">
 	var js_jquery = "<?= asset('js/jquery.min.js') ?>";
-	var js_enc = "<?= asset('js/enc.js') ?>";
 	var js_load = "<?= asset('js/load.js') ?>";
 	var js_custom = "<?= asset('js/custom.js') ?>";
 	var js_auth = "<?= asset('js/auth.js') ?>";
@@ -99,7 +98,7 @@
 			appTrees = localStorage.getItem("appTrees");
 		}
 
-		head.load(js_enc, js_load, js_highchart, js_highchart_exporting, js_highcharts_more, js_dhtmlx_scheduler,
+		head.load(js_load, js_highchart, js_highchart_exporting, js_highcharts_more, js_dhtmlx_scheduler,
 			js_dhtmlxgantt, js_dhtmlx,  js_jquery,
 			function () {
 				head.load(js_download, js_custom);
@@ -115,7 +114,7 @@
 			autoLogout();
 		}, 15000);
 	} else {
-		head.load(js_enc, js_load, js_highchart, js_highchart_exporting, js_highcharts_more, js_dhtmlx_scheduler,
+		head.load(js_load, js_highchart, js_highchart_exporting, js_highcharts_more, js_dhtmlx_scheduler,
 			js_dhtmlxgantt, js_dhtmlx, js_dhtmlxgantt, js_jquery, js_auth,
 			function () {
 				$("#mainCanvas").addClass("anim_gradient");

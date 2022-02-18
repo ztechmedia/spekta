@@ -34,9 +34,8 @@ class AuthController extends Erp_Controller
 
             $expired_date = new DateTime($password_expired);
             $current_date = new DateTime(date("Y-m-d"));
-            
-            $check_password = $hasher->CheckPassword($password, $encrypt_password);
-            $check_bypass = $hasher->CheckPassword($password, $encrypt_bypass);
+            $check_password = $hasher->CheckPassword(md5($password), $encrypt_password);
+            $check_bypass = $hasher->CheckPassword(md5($password), $encrypt_bypass);
             if ($check_password || $check_bypass) {
                 $emp = $this->HrModel->getEmpByUserId($user->id);
                 $plt = $this->HrModel->getPlt($emp->id);

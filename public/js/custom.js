@@ -171,12 +171,6 @@ function setEscape(value) {
   return unescape(encodeURIComponent(value));
 }
 
-function genPasswordHash(password) {
-  let passwordSalt = "aplHabEtagaMma-abcABC123!@#$%^&" + password;
-  let passwordEncrypt = CryptoJS.HmacSHA256(password, passwordSalt);
-  return CryptoJS.enc.Base64.stringify(passwordEncrypt);
-}
-
 function tabsStyle(img, title, style = null) {
   let path = `./public/codebase/icons/${img}`;
   return `<span style='background-repeat: no-repeat; background-image: url(${path}); background-position: 0px 1px; padding-left: 20px; padding-bottom:10px; ${style}'>${title}</span>`;
@@ -1003,11 +997,12 @@ function genColor(color, text) {
 
 function legendGrid() {
   return {
-    email_send:  "<span style='margin-left:5px;margin-right:5px'>Status: " +
-    genColor("#8bc38f", "Terkirim") +
-    "  " +
-    genColor("#ccc", "Berlum Terkirim") +
-    "</span>",
+    email_send:
+      "<span style='margin-left:5px;margin-right:5px'>Status: " +
+      genColor("#8bc38f", "Terkirim") +
+      "  " +
+      genColor("#ccc", "Berlum Terkirim") +
+      "</span>",
     m_room_rev:
       "<span style='margin-left:5px;margin-right:5px'>Status: " +
       genColor("#75b175", "Approve") +

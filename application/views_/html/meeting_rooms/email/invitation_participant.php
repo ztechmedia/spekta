@@ -2,7 +2,7 @@
     $style = [
         'head' => 'padding: 5px 0px 0px 10px;text-align:center;',
         'img' => 'width: 220px;height: auto;',
-        'body' => 'background: white;margin-top: 20px;border-radius: 5px;border: 1px solid #ccc;padding: 10px;box-shadow: 5px 10px #ccc;',
+        'body' => 'background: white;margin-top: 20px;border-radius: 5px;border: 1px solid #422800;padding: 10px;box-shadow: 5px 10px #ccc;',
         'p' => ' font-family: sans-serif;',
         'footer' => 'margin-top: 10px;',
         'table' => 'font-family:sans-serif;border-collapse: collapse;width:100%;',

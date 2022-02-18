@@ -209,16 +209,10 @@ $script = <<< "JS"
 				var password = setEscape(addUserForm.getItemValue("password"));
 				var confirm = setEscape(addUserForm.getItemValue("confirm_password"));
 
-				var passwordHash = genPasswordHash(password);
-				var confirmHash = genPasswordHash(confirm);
-
-				if(passwordHash !== confirmHash) {
+				if(password !== confirm) {
 					setEnable(["update", "clear"], addUserForm);
 					return eAlert("Password tidak sama!");
 				}
-
-				addUserForm.setItemValue("password", passwordHash);
-				addUserForm.setItemValue("confirm_password", confirmHash);
 
 				addUserForm.save();
 
@@ -347,16 +341,10 @@ $script = <<< "JS"
 				}
 
 				if(password && confirm) {
-					var passwordHash = genPasswordHash(password);
-					var confirmHash = genPasswordHash(confirm);
-
-					if(passwordHash !== confirmHash) {
+					if(password !== confirm) {
 						setEnable(["update", "clear"], editEmpForm);
 						return eAlert("Password tidak sama!");
 					}
-					
-					editEmpForm.setItemValue("new_password", passwordHash);
-					editEmpForm.setItemValue("new_password_confirm", confirmHash);
 				}
 
 				editEmpForm.save();

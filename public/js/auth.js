@@ -38,14 +38,6 @@ function loginFormUI() {
               label: "Password",
               offsetTop: 10,
               labelWidth: 80,
-              hidden: true,
-            },
-            {
-              type: "password",
-              name: "realpassword",
-              label: "Password",
-              offsetTop: 10,
-              labelWidth: 80,
               validate: "NotEmpty",
             },
           ],
@@ -98,16 +90,7 @@ function loginFormUI() {
         expire: 10000,
       });
     } else {
-      let realPassword = loginForm.getItemValue("realpassword");
-      let password = setEscape(realPassword);
-      let salt = "aplHabEtagaMma-abcABC123!@#$%^&" + password;
-      let encrypt = CryptoJS.HmacSHA256(password, salt);
-      let hash = CryptoJS.enc.Base64.stringify(encrypt);
-
-      loginForm.setItemValue("password", hash);
-      loginForm.disableItem("realpassword");
       document.getElementById("realForm").submit();
-      loginForm.enableItem("realpassword");
     }
   }
 
